@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Turn On Light</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img" alt="">
+            <img src="images/logo.png" class="logo" alt="">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp" alt="">
+            <img src="images/light.png" class="light" id="light" alt="">
+        </div>
+        <div class="text-container">
+            <h1>Prende <br>la Luz PIBE</h1>
+            <p>Esta es una lamparita de luz pibe para que vos puedas prenderla y 
+            no te quedes a oscuras como un pelotudo, asi que toca el interruptor de
+            onda</p>
+            <a href="">Check All collections</a>
+             <div class="control">
+                 <p>04</p>
+                    <div class="line"><span></span></div>
+                 <p>05</p>
+             </div>   
+        </div>
+    
+
+    </div>
+
+    
+
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+
+
+    }
+</script>
+    
+</body>
+
+
+
+
+
+</html>
